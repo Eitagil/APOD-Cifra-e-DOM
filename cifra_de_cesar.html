@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+</head>
+
+<body>
+
+    <script>
+
+        function cifraDeCesar(deslocamento, nomes)
+            {
+            
+            let numeros = []
+
+            let arrNomes = [];
+
+            for(let i = 0; i < nomes.length; i++){
+                numeros.push(nomes.charCodeAt (i) + deslocamento)
+            }
+
+
+            for (let i = 0; i < nomes.length; i++){
+                numeros.push (String.fromCharCode(arrChar[i]))
+            }
+
+            return arrNomes.join("")
+        }
+
+            console.log (cifraDeCesar(10, nomes))
+
+        function retornoCifraDeCesar (deslocamento, nomes)
+            {
+                let names = [];
+                let arrNames = [];
+
+                for (let i = 0; i < names.length; i++)
+                {
+                    names.push (names.charCodeAt(i) - deslocamento)
+                }
+                for (let i = 0; names.length; i++)
+                {
+                    arrNames.push (String.fromCharCode(names[i]));
+                }
+                return arrNames.join(".")
+            }
+
+            console.log (retornoCifraDeCesar(10, cifraDeCesar(10, nome)))
+    
+
+    </script>
+
+</body>
+</html>
+
